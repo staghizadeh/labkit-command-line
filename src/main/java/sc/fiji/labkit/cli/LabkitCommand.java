@@ -15,7 +15,7 @@ import java.util.concurrent.Callable;
  */
 @CommandLine.Command(name = LabkitCommand.COMMAND_NAME, subcommands = {
 	PrepareCommand.class, SegmentChunkCommand.class, ShowCommand.class,
-	CreateHdf5Command.class, CreatePartitionedHdf5Command.class,
+	CreateHdf5Command.class, CreatePartitionedHdf5Command.class, ProbCommand.class,
 	SegmentCommand.class, ShowUICommand.class, ListOpenCLDevicesCommand.class},
 	description = "Labkit command line tool for the segmentation of large files.")
 public class LabkitCommand implements Callable<Optional<Integer>> {
